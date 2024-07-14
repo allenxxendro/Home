@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.bg-image {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.menu-bar {
+    font-size: 3em;
+    color: rgba(7, 7, 156, 0.801);
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    top: 5vw;
+    left: 5vw;
+}
+.drop-down {
+    height: 100vh;
+    width: 0;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    z-index: 2;
+}
+.closed {
+    position: relative;
+    top: 8vw;
+    left: 78vw;
+    color: lightcyan;
+    font-size: 3.5em;
+}
+.menu-bar:hover {
+    color: blue;
+}
+.menu-btn {
+    color: green;
+    background-color: transparent;
+    padding: 2vw 4vw;
+    position: relative;
+    top: -49vw;
+    left: 36vw;
+    font-size: 1.2em;
+    outline: none;
+    transition: 0.5s ease-in-out;
+    border: 1px solid green;
+    border-radius: 1vw;
+}
+.menu-btn:hover {
+    background-color: green;
+    color: white;
+    border: navajowhite;
+    box-shadow: 0.40vw 0.40vw 0.40vw black;
+}
+.flow {
+    background-image: linear-gradient(240deg, blue, red);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-in;
+}
+ul li {
+    list-style-type: none;
+    margin-bottom: 15vw;
+    margin-left: -9vw;
+    padding-bottom: 10%;
+}
+.mtop {
+    position: relative;
+    top: -13vw;
+}
+.flow a {
+    text-decoration: none;
+    color: white;
+    font-size: 9vw;
+    padding: 3vw 6vw;
+    transition: 0.5s ease-out;
+    border-radius: 2vw;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+li a:hover {
+    background-color: red;
+    color: black;
+    box-shadow: 0.17vw 0.17vw 0.17vw black;
+}
+.xclose {
+    color: white;
+    font-size: 13vw;
+    position: absolute;
+    bottom: 35vw;
+    left: 45vw;
+    transition: 0.5s ease-out;
+}
+.xclose:hover {
+    text-shadow: 0.20vw 0.20vw 0.20vw white;
+}
